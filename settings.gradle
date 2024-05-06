@@ -1,0 +1,39 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.namespace == 'libs.plugins') {
+                useModule("libs:${requested.id.name}:${requested.version}")
+            }
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
+    }
+}
+
+rootProject.name = "listview"
+include ':app'
+rootProject.name = "mobile-exercise"
+include ':app'

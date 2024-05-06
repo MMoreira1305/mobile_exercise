@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Create add layout</string>
+    <string name="addPerson">Adicionar pessoa</string>
+    <string name="name">Nome</string>
+    <string name="phone">Telefone</string>
+    <string name="age">Idade</string>
+    <string name="hobby">Hobby</string>
+    <string name="sex">Sexo</string>
+    <string name="generic_error_message">An unexpected error occurred. Please try again later.</string>
+    <string name="add_contact_success_message">Contact ADD successfully.</string>
+    <string name="message_field_required">Field %s is required!</string>
+    <string name="welcome_message">Olá %s , bem vindo a app Minha lista de Contatos!</string>
+    <string name="welcome_message_initial">Bem vindo , por favor, digite seu nome</string>
+    <string name="type_name">Digite seu Nome:</string>
+    <string name="got_know">Conhecer</string>
+</resources>
